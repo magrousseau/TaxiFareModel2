@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/magalirousseau/code/magrousseau/TaxiFareModel/mlruns/1/a55c5b0d8c304d34aeac9533f5a851a5/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: a55c5b0d8c304d34aeac9533f5a851a5
+run_uuid: a55c5b0d8c304d34aeac9533f5a851a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1628931593780
+status: 1
+tags: []
+user_id: unknown
