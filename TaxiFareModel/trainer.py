@@ -6,10 +6,9 @@ from tempfile import mkdtemp
 import joblib
 import mlflow
 import pandas as pd
-from TaxiFareModel.data import get_data, clean_data, DIST_ARGS
-from TaxiFareModel.encoders import TimeFeaturesEncoder, DistanceTransformer, AddGeohash, Direction, \
-    DistanceToCenter
-from TaxiFareModel.utils import compute_rmse, simple_time_tracker
+from TaxiFareModel.data import get_data, clean_data
+from TaxiFareModel.encoders import TimeFeaturesEncoder, DistanceTransformer
+from TaxiFareModel.utils import compute_rmse
 from memoized_property import memoized_property
 from mlflow.tracking import MlflowClient
 from psutil import virtual_memory
@@ -124,7 +123,7 @@ class Trainer(object):
                     ('rgs', self.get_estimator())],
                                  memory=memory)
 
-    @simple_time_tracker
+    #@simple_time_tracker
     def train(self):
         tic = time.time()
         self.set_pipeline()
